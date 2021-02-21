@@ -1,5 +1,4 @@
-import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
-import { Loading } from "../components";
+import { useAuth0 } from "@auth0/auth0-react";
 
 import CountryFlag from "../components/country-flag";
 import EmailVerified from "../components/email-verification";
@@ -34,6 +33,4 @@ const Profile = () => {
   );
 };
 
-export default withAuthenticationRequired(Profile, {
-  onRedirecting: () => <Loading />,
-});
+export default Profile;
