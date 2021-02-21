@@ -4,7 +4,7 @@ import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import JpFlag from "../assets/jp.svg"
-import USFlag from "../assets/au.svg"
+import USFlag from "../assets/us.svg"
 import AusFlag from "../assets/au.svg"
 import NZFlag from "../assets/nz.svg"
 import DefaultFlag from "../assets/un.svg"
