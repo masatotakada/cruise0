@@ -4,6 +4,7 @@ import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import JpFlag from "../assets/jp.svg"
+import USFlag from "../assets/au.svg"
 import AusFlag from "../assets/au.svg"
 import NZFlag from "../assets/nz.svg"
 import DefaultFlag from "../assets/un.svg"
@@ -16,6 +17,9 @@ const CountryFlag = () => {
     switch (country) {
         case 'Japan':
             flag = JpFlag;
+            break;
+        case 'United States':
+            flag = USFlag;
             break;
         case 'Australia':
             flag = AusFlag;
