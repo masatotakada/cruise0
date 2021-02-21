@@ -5,7 +5,7 @@ import EmailVerified from "../components/email-verification";
 
 const Profile = () => {
   const { user } = useAuth0();
-  const { name, picture, email } = user;
+  const { name, picture, email, 'https://example.com/country': country, email_verified } = user;
 
   return (
     <div>
@@ -17,11 +17,11 @@ const Profile = () => {
             className="rounded-circle img-fluid profile-picture mb-3 mb-md-0"
           />
         </div>
-        <CountryFlag />
+        <CountryFlag country={country} />
         <div className="col-md text-center text-md-left">
           <h2>{name}</h2>
           <p className="lead text-muted">{email}</p>
-          <EmailVerified />
+          <EmailVerified emailstatus={email_verified} />
         </div>
       </div>
       <div className="row">

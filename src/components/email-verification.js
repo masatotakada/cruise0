@@ -1,15 +1,10 @@
 // src/components/email-verification.js
 
 import React from "react";
-import { useAuth0 } from "@auth0/auth0-react";
 
+const EmailVerified = (props) => {
 
-const EmailVerified = () => {
-
-    const { user } = useAuth0();
-    const { email_verified } = user;
-
-    if (email_verified) {
+    if (props.emailstatus) {
         return null;
     }
     return (

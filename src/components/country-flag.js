@@ -1,7 +1,6 @@
 // src/components/country-flag.js
 
 import React from "react";
-import { useAuth0 } from "@auth0/auth0-react";
 
 import JpFlag from "../assets/jp.svg"
 import USFlag from "../assets/us.svg"
@@ -10,11 +9,9 @@ import NZFlag from "../assets/nz.svg"
 import DefaultFlag from "../assets/un.svg"
 
 
-const CountryFlag = () => {
-    const { user } = useAuth0();
-    const { 'https://example.com/country': country } = user;
+const CountryFlag = (props) => {
     var flag = DefaultFlag;
-    switch (country) {
+    switch (props.country) {
         case 'Japan':
             flag = JpFlag;
             break;
