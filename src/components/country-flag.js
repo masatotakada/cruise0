@@ -12,7 +12,7 @@ import DefaultFlag from "../assets/un.svg"
 
 const CountryFlag = () => {
     const { user } = useAuth0();
-    const { 'https://example.com/country': country } = user;
+    const { 'https://cruise0.com/country': country } = user;
 
     var flag = DefaultFlag;
     switch (country) {
