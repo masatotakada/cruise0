@@ -21,6 +21,8 @@ npm install
 ```
 
 The application runs by on port `3000`, make sure there are no other client applications running.
+If you must change the modify package.json where `PORT=3000` is declared.
+Also change the steps below accordingly.
 
 ## Create an Auth0 Application
 
