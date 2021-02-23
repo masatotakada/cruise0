@@ -85,12 +85,10 @@ The value of `REACT_APP_AUTH0_CLIENT_ID` is the "Client ID" value from the "Sett
 
 ![Auth0 Application Settings from the Auth0 Dashboard](https://cdn.auth0.com/blog/complete-guide-to-react-authentication-with-auth0/auth0-application-settings-for-react-sdk.png)
 
-These variables let your React application identify itself as an authorized party to interact with the Auth0 authentication server.
-
 Run the client project:
 
 ```bash
 npm start
 ```
 
-Visit [`http://localhost:3000/`](http://localhost:3000/) to access the starter application.
+Visit [`http://localhost:3000/`](http://localhost:3000/) to access the demo application.
